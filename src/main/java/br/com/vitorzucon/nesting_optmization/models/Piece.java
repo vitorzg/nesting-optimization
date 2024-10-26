@@ -6,11 +6,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "Plates")
+@Table(name = "Pieces")
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class Plate {
+@AllArgsConstructor
+public class Piece {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,6 +18,5 @@ public class Plate {
 
     private Float com;
     private Float large;
-    private int shape;
-
+    private String imageUrl;
 }
